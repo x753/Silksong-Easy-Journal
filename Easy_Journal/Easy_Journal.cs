@@ -37,11 +37,10 @@ namespace EasyJournal
         [HarmonyPatch(typeof(EnemyJournalRecord), "get_KillsRequired")]
         class EnemyJournalRecord_get_KillsRequired_Patch
         {
-            [HarmonyPrefix]
-            public static bool EnemyJournalRecord_get_KillsRequired_Prefix(ref int __result)
+            [HarmonyPostfix]
+            public static void EnemyJournalRecord_get_KillsRequired_Postfix(ref int __result)
             {
                 if (__result > 1) { __result = 1; }
-                return false;
             }
         }
     }
