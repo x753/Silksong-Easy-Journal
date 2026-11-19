@@ -1,0 +1,9 @@
+{
+    "name": "Easy_Journal",
+    "version_number": "1.0.0",
+    "website_url": "",
+    "description": "You only need to kill one of each enemy to complete its hunter's journal entry.",
+    "dependencies": [
+        "BepInEx-BepInExPack_Silksong-5.4.2303"
+    ]
+}
